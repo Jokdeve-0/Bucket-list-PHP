@@ -1,0 +1,23 @@
+
+<header>
+    <div>
+        <a href="{{path('main_home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="Logo"></a>
+        <h1>Bucket-List</h1>
+    </div>
+    <nav>
+        <a class="hover-2" href="{{path('main_home')}}">Accueil</a>
+        <a class="hover-2" href="{{path('main_about')}}">About Us</a>
+        <a class="hover-2" href="{{path('wish_list')}}">La liste</a>
+        {% if app.user %}
+        <a class="hover-2" href="{{path('wish_create')}}">Ajouter</a>
+        <a class="hover-2" href="{{path('app_logout')}}">Deconnexion</a>
+{#            {% if is_granted("ROLE_ADMIN") %}#}
+{#                <a class="hover-2"  href="{{ path("admin_dashboard") }}" title="Admin dashboard">Admin</a>#}
+{#            {% endif %}#}
+        {% else %}
+        <a class="hover-2" href="{{path('app_register')}}">S'incrire</a>
+        <a class="hover-2" href="{{path('app_login')}}">Connexion</a>
+        {% endif %}
+    </nav>
+{% if app.user %}<p class="hover-2 ">Hello {{app.user.pseudo}}</p>{% endif %}
+</header>

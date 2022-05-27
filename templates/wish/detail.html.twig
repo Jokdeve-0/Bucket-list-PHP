@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+    <h2>{{wish.title |capitalize}}</h2>
+    <p>{{wish.author |capitalize}} a Publié le : {{
+        wish.dateCreated
+        | format_datetime('full', 'full', locale='fr')
+        | split(' ')[0]}}
+        {{wish.dateCreated
+        | format_datetime('full', 'full', locale='fr')
+        | split(' ')[1]}}
+        {{wish.dateCreated
+        | format_datetime('full', 'full', locale='fr')
+        | split(' ')[2]}}</p>
+    <p>{{wish.description}}</p>
+{% endblock %}
+

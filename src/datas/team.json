@@ -1,0 +1,26 @@
+[
+  {
+    "firstname": "Fabien",
+    "lastname": "Potencier",
+    "dateOfBirth": "1979-02-22",
+    "creatorOf": "Symfony",
+    "picture": "https://pbs.twimg.com/profile_images/1126770148092698625/nI58pL5O_200x200.png",
+    "description" : "Fabien Potencier a fondé l'agence interactive Sensio en 1998 avec Grégory Pascal, qu'il a rencontré sur les bancs de HEC Entrepreneurs. Développeur PHP de la première heure, il est d'emblée en quête de méthodes pour accélérer les projets. C'est dans cet objectif qu'il crée Symfony en 2004. Dans la foulée, il fonde SensioLabs pour porter son projet.  "
+  },
+  {
+    "firstname": "Taylor",
+    "lastname": "Otwell",
+    "dateOfBirth": "1982-10-10",
+    "creatorOf": "Laravel",
+    "picture": "https://avatars.githubusercontent.com/u/463230?v=4",
+    "description" : "Taylor Otwell est un ingénieur logiciel américain surtout connu pour avoir créé le framework Web basé sur PHP Laravel. Otwell a créé Laravel pour tenter de fournir une alternative plus avancée au framework CodeIgniter, qui ne fournissait pas certaines fonctionnalités telles que la prise en charge intégrée de l'authentification et de l'autorisation des utilisateurs. La première version bêta de Laravel a été mise à disposition le 9 juin 2011, suivie de la version Laravel 1 plus tard dans le même mois."
+  },
+  {
+    "firstname": "Jordi",
+    "lastname": "Boggiano",
+    "dateOfBirth": "1986-01-30",
+    "creatorOf": "Composer",
+    "picture": "https://pbs.twimg.com/profile_images/836861531518304256/XP6ZqZPA_200x200.jpg",
+    "description" : "Je suis impliqué dans le développement Web depuis environ 2000, travaillant principalement avec PHP et JavaScript, et j'utilisais ActionScript à l'époque où c'était encore cool. Ayant plongé profondément dans le domaine de l' open source , je maintiens actuellement Composer (le gestionnaire de dépendances pour PHP) et Packagist.org (le registre de paquets qui l'accompagne). En parallèle de tout cela, je fais aussi de mon mieux pour diriger l'équipe d'ingénierie de Teamup . "
+  }
+]

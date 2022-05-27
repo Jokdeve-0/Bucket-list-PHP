@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Le développement Web côté serveur – Backend (avec Symfony)</h2>
+    <h3>TP Bucket-List CDA@22</h3>
+    <p>
+        Un site permettant à ses utilisateurs de créer une liste de toutes les choses qu' ils souhaitent au moins une fois dans leur vie, comme  par exemple voir la Grande Muraille de Chine, boire du Champagne dans une limousine ou sauter en parachute.
+    </p>
+
+    <h4>BONUS TP</h4>
+    <div class="about">
+        {% for data in datas%}
+            <div class="bloc_about">
+                <img src="{{data.picture}}" alt="photo d'identité" width="200" height="200">
+                <hr>
+                <p>
+                    <strong>{{data.firstname}} {{data.lastname}}</strong> {{data.firstname == "Fabien"?  "💚" : ""}}<br>
+                    <i>né le {{data.dateOfBirth}}</i> <br> à créé : {{data.creatorOf}}
+                </p>
+                <hr>
+                <p class="_description">{{data.description}}</p>
+            </div>
+        {%endfor%}
+    </div>
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
